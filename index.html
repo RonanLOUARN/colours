@@ -1,66 +1,208 @@
-<table>
-  <tr>
-    <th>Couleur</th>
-    <th>Code d'échappement</th>
-  </tr>
-  <tr>
-    <td style="color: #FF0000;">Rouge</td>
-    <td>\x07</td>
-  </tr>
-  <tr>
-    <td style="color: #FFAAAA;">Rouge clair</td>
-    <td>\x0F</td>
-  </tr>
-  <tr>
-    <td style="color: #AA0000;">Rouge foncé</td>
-    <td>\x02</td>
-  </tr>
-  <tr>
-    <td style="color: #6688AA;">Bleu gris</td>
-    <td>\x0A</td>
-  </tr>
-  <tr>
-    <td style="color: #0000FF;">Bleu</td>
-    <td>\x0B</td>
-  </tr>
-  <tr>
-    <td style="color: #0000AA;">Bleu foncé</td>
-    <td>\x0C</td>
-  </tr>
-  <tr>
-    <td style="color: #AA00AA;">Violet</td>
-    <td>\x03</td>
-  </tr>
-  <tr>
-    <td style="color: #DD55FF;">Orchidée</td>
-    <td>\x0E</td>
-  </tr>
-  <tr>
-    <td style="color: #FFFF00;">Jaune</td>
-    <td>\x09</td>
-  </tr>
-  <tr>
-    <td style="color: #FFD700;">Or</td>
-    <td>\x10</td>
-  </tr>
-  <tr>
-    <td style="color: #00FF00;">Vert clair</td>
-    <td>\x05</td>
-  </tr>
-  <tr>
-    <td style="color: #00AA00;">Vert</td>
-    <td>\x04</td>
-  </tr>
-  <tr>
-    <td style="color: #AAFF00;">Citron vert</td>
-    <td>\x06</td>
-  </tr>
-  <tr>
-    <td style="color: #888888;">Gris</td>
-    <td>\x08</td>
-  </tr>
-  <tr>
-    <td style="color: #AA55AA;">Gris 2</td>
-    <td>\x0D</td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tableau des Couleurs CSGO</title>
+  <style>
+    body {
+      background-color: #222222;
+      color: #FFFFFF;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #FFFFFF;
+    }
+
+    th {
+      background-color: #333333;
+    }
+
+    td.color {
+      font-weight: bold;
+    }
+
+    td.sample {
+      font-family: monospace;
+      padding: 5px;
+    }
+
+    .default {
+      background-color: #FFFFFF;
+      color: #000000;
+    }
+
+    .teamcolour {
+      background-color: #AA00AA;
+    }
+
+    .red {
+      background-color: #FF0000;
+    }
+
+    .lightred {
+      background-color: #FFAAAA;
+    }
+
+    .darkred {
+      background-color: #AA0000;
+    }
+
+    .bluegrey {
+      background-color: #6688AA;
+    }
+
+    .blue {
+      background-color: #0000FF;
+    }
+
+    .darkblue {
+      background-color: #0000AA;
+    }
+
+    .purple {
+      background-color: #AA00AA;
+    }
+
+    .orchid {
+      background-color: #DD55FF;
+    }
+
+    .yellow {
+      background-color: #FFFF00;
+    }
+
+    .gold {
+      background-color: #FFD700;
+    }
+
+    .lightgreen {
+      background-color: #00FF00;
+    }
+
+    .green {
+      background-color: #00AA00;
+    }
+
+    .lime {
+      background-color: #AAFF00;
+    }
+
+    .grey {
+      background-color: #888888;
+    }
+
+    .grey2 {
+      background-color: #AA55AA;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tableau des Couleurs CSGO</h1>
+  <table>
+    <tr>
+      <th>Couleur</th>
+      <th>Code d'échappement</th>
+      <th>Exemple</th>
+    </tr>
+    <tr>
+      <td class="color default">Blanc (par défaut)</td>
+      <td>\x01</td>
+      <td class="sample default">Message en couleur blanche</td>
+    </tr>
+    <tr>
+      <td class="color teamcolour">Couleur d'équipe (violet si message du serveur)</td>
+      <td>\x03</td>
+      <td class="sample teamcolour">Message en couleur d'équipe</td>
+    </tr>
+    <tr>
+      <td class="color red">Rouge</td>
+      <td>\x07</td>
+      <td class="sample red">Message en couleur rouge</td>
+    </tr>
+    <tr>
+      <td class="color lightred">Rouge clair</td>
+      <td>\x0F</td>
+      <td class="sample lightred">Message en couleur rouge clair</td>
+    </tr>
+    <tr>
+      <td class="color darkred">Rouge foncé</td>
+      <td>\x02</td>
+      <td class="sample darkred">Message en couleur rouge foncé</td>
+    </tr>
+    <tr>
+      <td class="color bluegrey">Bleu gris</td>
+      <td>\x0A</td>
+      <td class="sample bluegrey">Message en couleur bleu gris</td>
+    </tr>
+    <tr>
+      <td class="color blue">Bleu</td>
+      <td>\x0B</td>
+      <td class="sample blue">Message en couleur bleue</td>
+    </tr>
+    <tr>
+      <td class="color darkblue">Bleu foncé</td>
+      <td>\x0C</td>
+      <td class="sample darkblue">Message en couleur bleue foncée</td>
+    </tr>
+    <tr>
+      <td class="color purple">Violet</td>
+      <td>\x03</td>
+      <td class="sample purple">Message en couleur violette</td>
+    </tr>
+    <tr>
+      <td class="color orchid">Orchidée</td>
+      <td>\x0E</td>
+      <td class="sample orchid">Message en couleur orchidée</td>
+    </tr>
+    <tr>
+      <td class="color yellow">Jaune</td>
+      <td>\x09</td>
+      <td class="sample yellow">Message en couleur jaune</td>
+    </tr>
+    <tr>
+      <td class="color gold">Or</td>
+      <td>\x10</td>
+      <td class="sample gold">Message en couleur or</td>
+    </tr>
+    <tr>
+      <td class="color lightgreen">Vert clair</td>
+      <td>\x05</td>
+      <td class="sample lightgreen">Message en couleur verte claire</td>
+    </tr>
+    <tr>
+      <td class="color green">Vert</td>
+      <td>\x04</td>
+      <td class="sample green">Message en couleur verte</td>
+    </tr>
+    <tr>
+      <td class="color lime">Citron vert</td>
+      <td>\x06</td>
+      <td class="sample lime">Message en couleur citron vert</td>
+    </tr>
+    <tr>
+      <td class="color grey">Gris</td>
+      <td>\x08</td>
+      <td class="sample grey">Message en couleur grise</td>
+    </tr>
+    <tr>
+      <td class="color grey2">Gris 2</td>
+      <td>\x0D</td>
+      <td class="sample grey2">Message en couleur grise 2</td>
+    </tr>
+  </table>
+</body>
+</html>
